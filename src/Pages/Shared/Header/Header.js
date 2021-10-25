@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-           <Navbar sticky='top' bg="dark" variant="dark">
+           <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">Car Service</Navbar.Brand>
                     <Navbar.Toggle />
