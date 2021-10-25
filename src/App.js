@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Booking from './Pages/Booking/Booking/Booking';
 import Login from './Pages/Login/Login/Login';
 import Header from './Pages/Shared/Header/Header';
+import AuthProvider from './context/authProvider';
 
 function App() {
   return (
     <div className="App">
+       <AuthProvider>
        <Router>
           <Header></Header>
           <Switch>
@@ -30,6 +32,7 @@ function App() {
             </Route>
           </Switch>
        </Router>
+       </AuthProvider>
     </div>
   );
 }
