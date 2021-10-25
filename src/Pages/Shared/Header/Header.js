@@ -16,11 +16,11 @@ const Header = () => {
                         <Nav.Link as={Link} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={Link} to="/home#experts">Experts</Nav.Link>
                         { user?.email ?
-                            <Button variant="light">LogOut </Button> :
+                            <Button onClick={logOut} variant="light">LogOut </Button> :
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>
                         }
                         <Navbar.Text>
-                            Signed in as: <a href="#login">{user?.displayName}</a>
+                              Signed in as: <a href="#login">{user?.displayName}</a>
                         </Navbar.Text>
                     </Navbar.Collapse> 
                 </Container>
